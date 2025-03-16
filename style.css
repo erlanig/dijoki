@@ -15,21 +15,23 @@ body, html {
 .maintenance-container {
     text-align: center;
     background-color: #fff;
-    padding: 40px;
+    padding: 5%; /* Padding relatif berdasarkan ukuran container */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Lebar container relatif terhadap viewport */
+    max-width: 600px; /* Lebar maksimum untuk layar besar */
 }
 
 /* Heading style */
 .maintenance-container h1 {
-    font-size: 2.5em;
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Ukuran font fleksibel */
     color: #333;
     margin-bottom: 20px;
 }
 
 /* Paragraph style */
 .maintenance-container p {
-    font-size: 1.2em;
+    font-size: clamp(1rem, 3vw, 1.2rem); /* Ukuran font fleksibel */
     color: #666;
     margin-bottom: 30px;
 }
@@ -55,6 +57,6 @@ body, html {
 .footer {
     margin-top: 20px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: clamp(0.8rem, 2vw, 0.9rem); /* Ukuran font fleksibel */
     color: #777;
 }
